@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a pytorch implementation of the Chinese COVID Dialogue Generation Model.
+This is a pytorch implementation of CoCoGPT(COVID-19 Consultant GPT).
 
 # Environment
 
