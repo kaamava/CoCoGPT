@@ -1,5 +1,4 @@
 # CoCoGPT
-# COVID-19 Dialogue Generation Model
 
 ## Introduction
 
