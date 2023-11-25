@@ -2,23 +2,21 @@
 
 ## Introduction
 
-This is a pytorch implementation of CoCoGPT(COVID-19 Consultant GPT).
+Today, with the increasing risk of COVID-19 infection in the society, people who are suspected of COVID-19's symptoms or have a greater risk of infection for various reasons will have some anxiety about medical consultation. Relatively, the pressure on the medical system will rapidly increase in the short term. Opening up an online medical consultation platform can to some extent alleviate the current social pressure and public anxiety. However, at the same time, the professionalism of online consultation needs to be guaranteed. Therefore, the purpose of this report is to establish a medical dialogue model CoCoGPT (COVID-19 Consultant GPT) that can provide COVID-19 related consultations using professional medical consultation materials. The report utilizes and improves a Chinese medical dialogue dataset COVID-Dialogue-Chinese, which includes dialogue records between doctors and patients regarding COVID-19. In this study, the dataset were used to train a BERT-GPT based model.
 
-# Environment
+# Dataset
+COVID-Dialogue-Dataset-Chinese is a Chinese medical dialogue dataset about COVID-19 and other types of pneumonia. Patients who are concerned that they may be infected by COVID-19 or other pneumonia consult doctors and doctors provide advice. There are 1088 consultations. Each consultation consists of
 
-The code is based on python 3.7.3 and pytorch 1.4.0. The code is tested on GeForce RTX 2080Ti.
+- ID
+- URL
+- Description of patient’s medical condition
+- Dialogue
+- (Optional) Diagnosis and suggestions.
 
-## Run
+The dataset is built from [Haodf.com](https://www.haodf.com/) and all copyrights of the data belong to [Haodf.com](https://www.haodf.com/).
 
-In training:
+## Model
 
-`LOAD_DIR` is the directory that you store your trained model weights
-
-`DECODER_PATH` is the file path of the trained model weight
-
-Before running the code, download the pre-trained [encoder](https://drive.google.com/file/d/13GnYf6pj0wD7XNWrazMnoQXgUki4Tybp/view?usp=sharing) and [decoder](https://drive.google.com/file/d/1qaAUCV2alrYVrSUyM2PCmYdRuAip_DSP/view?usp=sharing) model weight and put them into the model directory. (Only Bert-GPT support the pre-trained weight)
-
-> You can also directly download the final trained decoder model [here](https://drive.google.com/file/d/1PDEFawj3aPr-8bEA4DjhSDhqMqOuZslR/view?usp=sharing)
 
 
 
